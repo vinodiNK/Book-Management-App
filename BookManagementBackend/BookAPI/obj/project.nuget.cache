@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "dyNjBF59XeE=",
+  "dgSpecHash": "I4PHU4wwOWs=",
   "success": true,
   "projectFilePath": "F:\\Interview Assignment\\Book Management App\\BookManagementBackend\\BookAPI\\BookAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vinodi Nikeshani\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.4\\microsoft.aspnetcore.openapi.10.0.4.nupkg.sha512",
-    "C:\\Users\\Vinodi Nikeshani\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+    "C:\\Users\\Vinodi Nikeshani\\.nuget\\packages\\microsoft.extensions.apidescription.server\\10.0.0\\microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
+    "C:\\Users\\Vinodi Nikeshani\\.nuget\\packages\\microsoft.openapi\\2.4.1\\microsoft.openapi.2.4.1.nupkg.sha512",
+    "C:\\Users\\Vinodi Nikeshani\\.nuget\\packages\\swashbuckle.aspnetcore\\10.1.5\\swashbuckle.aspnetcore.10.1.5.nupkg.sha512",
+    "C:\\Users\\Vinodi Nikeshani\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.1.5\\swashbuckle.aspnetcore.swagger.10.1.5.nupkg.sha512",
+    "C:\\Users\\Vinodi Nikeshani\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.1.5\\swashbuckle.aspnetcore.swaggergen.10.1.5.nupkg.sha512",
+    "C:\\Users\\Vinodi Nikeshani\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.1.5\\swashbuckle.aspnetcore.swaggerui.10.1.5.nupkg.sha512"
   ],
   "logs": []
 }

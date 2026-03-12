@@ -32,3 +32,6 @@ F:\Interview Assignment\Book Management App\BookManagementBackend\BookAPI\obj\De
 F:\Interview Assignment\Book Management App\BookManagementBackend\BookAPI\obj\Debug\net10.0\BookAPI.pdb
 F:\Interview Assignment\Book Management App\BookManagementBackend\BookAPI\obj\Debug\net10.0\BookAPI.genruntimeconfig.cache
 F:\Interview Assignment\Book Management App\BookManagementBackend\BookAPI\obj\Debug\net10.0\ref\BookAPI.dll
+F:\Interview Assignment\Book Management App\BookManagementBackend\BookAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Interview Assignment\Book Management App\BookManagementBackend\BookAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Interview Assignment\Book Management App\BookManagementBackend\BookAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
