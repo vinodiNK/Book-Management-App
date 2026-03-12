@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dyNjBF59XeE=",
+  "success": true,
+  "projectFilePath": "F:\\Interview Assignment\\Book Management App\\BookManagementBackend\\BookAPI\\BookAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vinodi Nikeshani\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.4\\microsoft.aspnetcore.openapi.10.0.4.nupkg.sha512",
+    "C:\\Users\\Vinodi Nikeshani\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
