@@ -1,0 +1,49 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+.actions button {
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background: #f39c12;
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #d68910;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
