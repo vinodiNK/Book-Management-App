@@ -1,9 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Book } from '../../models/book';
 import { BookService } from '../../services/book.service';
+import { BookFormComponent } from '../book-form/book-form.component';
 
 @Component({
   selector: 'app-book-list',
+  standalone: true,
+  imports: [CommonModule, BookFormComponent],
   templateUrl: './book-list.component.html'
 })
 export class BookListComponent implements OnInit {
@@ -11,7 +15,7 @@ export class BookListComponent implements OnInit {
   books: Book[] = [];
   selectedBook: Book | null = null;
 
-  constructor(private bookService: BookService) { }
+  constructor(private bookService: BookService) {}
 
   ngOnInit(): void {
     this.loadBooks();
@@ -24,11 +28,12 @@ export class BookListComponent implements OnInit {
   }
 
   editBook(book: Book) {
-    this.selectedBook = {...book}; // clone the book
+    this.selectedBook = { ...book };
   }
 
   deleteBook(id?: number) {
     if (!id) return;
+
     this.bookService.deleteBook(id).subscribe(() => {
       this.loadBooks();
     });
