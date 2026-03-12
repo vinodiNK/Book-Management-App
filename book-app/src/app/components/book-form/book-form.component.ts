@@ -1,9 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { Book } from '../../models/book';
 import { BookService } from '../../services/book.service';
 
 @Component({
   selector: 'app-book-form',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './book-form.component.html'
 })
 export class BookFormComponent implements OnChanges {
@@ -11,29 +15,34 @@ export class BookFormComponent implements OnChanges {
   @Input() book: Book | null = null;
   @Output() formSubmit = new EventEmitter<void>();
 
-  bookData: Book = { title: '', author: '', isbn: '', publicationDate: '' };
+  bookData: Book = {
+    title: '',
+    author: '',
+    isbn: '',
+    publicationDate: ''
+  };
 
   constructor(private bookService: BookService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (this.book) {
-      this.bookData = {...this.book};
+      this.bookData = { ...this.book };
     }
   }
 
   saveBook() {
     if (this.bookData.id) {
-      // update
-      this.bookService.updateBook(this.bookData.id, this.bookData).subscribe(() => {
-        alert("Book updated successfully!");
-        this.resetForm();
-      });
+      this.bookService.updateBook(this.bookData.id, this.bookData)
+        .subscribe(() => {
+          alert("Book updated!");
+          this.resetForm();
+        });
     } else {
-      // add
-      this.bookService.addBook(this.bookData).subscribe(() => {
-        alert("Book added successfully!");
-        this.resetForm();
-      });
+      this.bookService.addBook(this.bookData)
+        .subscribe(() => {
+          alert("Book added!");
+          this.resetForm();
+        });
     }
   }
 
