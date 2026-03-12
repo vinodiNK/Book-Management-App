@@ -1,3 +1,4 @@
+
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Book } from '../../models/book';
@@ -8,8 +9,10 @@ import { BookFormComponent } from '../book-form/book-form.component';
   selector: 'app-book-list',
   standalone: true,
   imports: [CommonModule, BookFormComponent],
-  templateUrl: './book-list.component.html'
+  templateUrl: './book-list.component.html',
+  styleUrls: ['./book-list.component.css']
 })
+
 export class BookListComponent implements OnInit {
 
   books: Book[] = [];

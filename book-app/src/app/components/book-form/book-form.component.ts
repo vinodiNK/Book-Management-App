@@ -8,8 +8,10 @@ import { BookService } from '../../services/book.service';
   selector: 'app-book-form',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './book-form.component.html'
+  templateUrl: './book-form.component.html',
+  styleUrls: ['./book-form.component.css']
 })
+
 export class BookFormComponent implements OnChanges {
 
   @Input() book: Book | null = null;
